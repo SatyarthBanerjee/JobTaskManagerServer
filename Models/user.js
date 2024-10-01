@@ -13,7 +13,7 @@ const TaskSchema = new Schema({
   },
   assignedTo: {
     type: String, // Reference to a User
-    required:true,
+    required:false,
     ref:'User'
   },
   dueDate: {

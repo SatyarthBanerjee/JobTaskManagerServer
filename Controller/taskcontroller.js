@@ -25,9 +25,9 @@ const addTask = async (req, res) => {
         }
 
         // Check if the assignedTo is the same as the current user
-        if (assignedTo === usernameoremail) {
-            return res.status(400).json({ msg: "You cannot assign tasks to yourself." });
-        }
+        // if (assignedTo === usernameoremail) {
+        //     return res.status(400).json({ msg: "You cannot assign tasks to yourself." });
+        // }
 
         // Ensure tasks are initialized
         user.tasks = user.tasks || { todo: [], inProgress: [], completed: [] }; // Initialize tasks if undefined
